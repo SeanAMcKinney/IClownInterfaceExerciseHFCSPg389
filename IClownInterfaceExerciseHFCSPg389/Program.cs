@@ -23,7 +23,7 @@ namespace IClownInterfaceExerciseHFCSPg389
 
     class FunnyFunny : IClown
     {
-        private string funnyThingIHave;
+        private readonly string funnyThingIHave;
         public string FunnyThingIHave { get { return funnyThingIHave; } }
 
         public FunnyFunny(string funnyThingIHave)
@@ -39,7 +39,7 @@ namespace IClownInterfaceExerciseHFCSPg389
 
     class ScaryScary : FunnyFunny, IScaryClown
     {
-        private int scaryThingCount;
+        private readonly int scaryThingCount;
         public ScaryScary(string funnyThing, int scaryThingCount) : base(funnyThing)
         {
             this.scaryThingCount = scaryThingCount;
